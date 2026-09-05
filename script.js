@@ -1,4 +1,16 @@
 const story = document.getElementById("story");
+function horrorEffect() {
+
+    document.body.classList.add("shake");
+    document.body.classList.add("blood");
+
+    setTimeout(() => {
+
+        document.body.classList.remove("shake");
+        document.body.classList.remove("blood");
+
+    }, 600);
+}
 const choices = document.getElementById("choices");
 const statusText = document.getElementById("status");
 
@@ -279,6 +291,8 @@ function enterMansion() {
 // SEARCH ROOM
 
 function searchRoom() {
+horrorEffect();
+
 
     showScene(
 
@@ -361,6 +375,7 @@ function searchExit() {
 // CALL AVI
 
 function callAvi() {
+horrorEffect();
 
     showScene(
 
@@ -489,6 +504,7 @@ function hiddenRoom() {
 // FINAL ROOM
 
 function finalRoom() {
+horrorEffect();
 
     showScene(
 
@@ -571,6 +587,7 @@ function escape() {
 // GHOST ENDING
 
 function ghost() {
+horrorEffect();
 
     showScene(
 
